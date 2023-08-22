@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ひらがな読み取りタイピング</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="">
+</head>
+
+<body>
+    <div id="game">
+        <div class="others">
+            <p>残り:<span id="timer">60</span>秒</p>
+            <p>スコア:<span id="score">0</span></p>
+        </div>
+        <div class="square">
+            <div class="hiragana">
+                <p id="word"></p>
+            </div>
+
+            <div class="romaji">
+                <span id="entered" class="marker"></span>
+                <span id="romaji"></span>
+            </div>
+</div>
+</div>
+
+<div id="menu">
+    <h1>ひらがな読み取りタイピング</h1>
+    <button id="startButton">スタート</button>
+</div>
+
+<div id="settings">
+    <div id="settingScreen" class="settingScreen">
+        <p>設定</p>
+        <p>時間制限:<span id="settingTimerDisplay"></span>秒</p>
+        <button id="timerSetting">変更</button>
+        <p id="info">デフォルト設定</p>
+    </div>
+    <button id="settingButton" class="settingButton">
+        <img src="images/icons8-setting-50.png">
+    </button>
+</div>
+
+<p id="startCountDown" class="countdown"></p>
+
+<div id="end">
+    <div class="result">
+        <p>結果</p>
+        <p>スコア:<span id="scoreResult"></span></p>
+        <p>正しく打った回数:<span id="succeeded"></span>回</p>
+        <p>ミスをした回数:<span id="misses"></span>回</p>
+        <button id="restartButton">メニュー</button>
+        
+        <div class="rank">
+            <p id="rank"></p>
+        </div>
+    </div>
+</div>
+
+<script src="game.js"></script>
+<script src="unpkg.com_wanakana@5.1.0_wanakana.min.js"></script>
+
+</body>
+</html>

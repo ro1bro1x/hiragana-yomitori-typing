@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: rgba(240, 248, 255, 0.5);
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(120, 128, 155, 0.5);
+}
+
+body {
+    background-color: gray;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.countdown {
+    font-size: 100px;
+}
+
+.settingButton {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.settingButton:hover {
+    background-color: transparent;
+}
+
+.settingScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 300px;
+    height: 300px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.others {
+    color: white;
+    margin-top: 250px;
+}
+
+.square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 600px;
+    height: 130px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.hiragana {
+    margin-top: 20px;
+}
+
+.result {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+    height: 400px;
+    color: white;
+    background-color: darkslategrey;
+    border-radius: 10px;
+}
+
+.result button {
+    margin-top: 10px;
+}
+
+.rank {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin-top: 120px;
+    width: 400px;
+    height: 100px;
+    color: white;
+    background-color: darkkhaki;
+    border-radius: 10px;
+}
+
+.rank p {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.marker {
+    color:darkgray;
+}
+
+.hidden {
+    display: none;
+}
